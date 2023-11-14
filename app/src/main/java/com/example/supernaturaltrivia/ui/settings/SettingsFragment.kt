@@ -7,10 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.supernaturaltrivia.R
-import com.example.supernaturaltrivia.databinding.FragmentNotificationsBinding
 import com.example.supernaturaltrivia.databinding.FragmentSettingsBinding
-import com.example.supernaturaltrivia.ui.notifications.NotificationsViewModel
 
 class SettingsFragment : Fragment() {
 
