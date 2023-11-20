@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class HomeViewModel : ViewModel() {
 
     val onEasyButtonClicked = MutableLiveData(false)
-    val onMediuButtonClicked = MutableLiveData(false)
+    val onMediumButtonClicked = MutableLiveData(false)
     val onHardButtonClicked = MutableLiveData(false)
 
     private val _text = MutableLiveData<String>().apply {
