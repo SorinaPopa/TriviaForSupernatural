@@ -20,10 +20,10 @@ class HomeViewModel : ViewModel() {
     }
 
     fun onClickMediumButton(){
-        onEasyButtonClicked.value=true
+        onMediumButtonClicked.value=true
     }
 
     fun onClickHardButton(){
-        onEasyButtonClicked.value=true
+        onHardButtonClicked.value=true
     }
 }

@@ -41,8 +41,6 @@ class HomeFragment : Fragment() {
 
                 if (homeViewModel.onEasyButtonClicked.value == true) {
                     Toast.makeText(requireContext(), "From Easy", Toast.LENGTH_LONG).show()
-                } else {
-                    Toast.makeText(requireContext(), "Invalid Easy", Toast.LENGTH_LONG).show()
                 }
                 homeViewModel.onEasyButtonClicked.value = false
             }
@@ -58,9 +56,8 @@ class HomeFragment : Fragment() {
             }
             if (homeViewModel.onMediumButtonClicked.value == true) {
                 Toast.makeText(requireContext(), "From Medium", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(requireContext(), "Invalid Medium", Toast.LENGTH_LONG).show()
             }
+            homeViewModel.onMediumButtonClicked.value = false
 
         }
     }
@@ -71,12 +68,10 @@ class HomeFragment : Fragment() {
                 findNavController().navigate(R.id.action_homeFragment_to_triviaFragment)
                 homeViewModel.onHardButtonClicked.value = false
             }
-            if (homeViewModel.onEasyButtonClicked.value == true) {
+            if (homeViewModel.onHardButtonClicked.value == true) {
                 Toast.makeText(requireContext(), "From Hard", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(requireContext(), "Invalid Hard", Toast.LENGTH_LONG).show()
             }
-
+            homeViewModel.onHardButtonClicked.value = false
         }
     }
 }
